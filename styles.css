@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+
+.dropdown .facebook a {
+    display: block;
+    height: 45px;
+    width: 90%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.dropdown .google a {
+    display: block;
+    height: 45px;
+    width: 90%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.dropdown .facebook i,
+.dropdown .google i {
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.dropdown .google a {
+    background: linear-gradient(#e0e5e7 0%, #e5e8e9 0%);
+}
+
+.dropdown .google a:hover {
+    background: linear-gradient(#e1e7e9 0%, #d2d6d7 0%);
+    margin: 2px 0 2px 0;
+}
+
+.dropdown .facebook a {
+    background: linear-gradient(#3b5998 0%, #476bb8 0%);
+}
+
+.dropdown .facebook a:hover {
+    background: linear-gradient(#3b5998 0%, #476bb8 0%);
+    margin: 2px 0 2px 0;
+}

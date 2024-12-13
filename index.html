@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="container green borderXwidth">
+        <a href="index.html">HOME</a>
+        <a href="info/info.html">INFO</a>
+        <a href="contact/contact.html">CONTACT US</a>
+      </div>
+      <div class="corner-menu" onclick="toggleDropdown()">
+        <div class="icon"><img src="image/jjtm.png" alt=".." width="25" height="25"></div>
+        <div class="dropdown" id="dropdown-menu">
+            <ul>
+                <li onclick="goToLogin()">Login</li>
+                <li onclick="goToSignup()">Sign up</li>
+                <div class="line"></div>
+                <li class="facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                </li>
+                <li class="google">
+                  <a href="#"><i class="fab fa-google"></i>Google</a>
+                </li>
+        </ul>
+        </div>
+    </div>
+  
+    <script>
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+  
+        function goToLogin() {
+            window.location.href = 'login.html'; // เปลี่ยนไปยังหน้าลงชื่อเข้าใช้
+        }
+  
+        function goToSignup() {
+            window.location.href = 'sinup.html'; // เปลี่ยนไปยังหน้าลงชื่อสมัคร
+        }
+  
+        // ปิด dropdown เมื่อคลิกข้างนอก
+        window.addEventListener('click', function (e) {
+            const menu = document.getElementById('dropdown-menu');
+            const icon = document.querySelector('.corner-menu');
+            if (!icon.contains(e.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <img src="image/yama1.webp" />
+          <div class="content">
+            <div class="author">RAMAKIEN</div>
+            <div class="title">ต้นกำเนิดและความสำคัญ</div>
+            <div class="topic">RAMAKIEN</div>
+            <div class="des">
+              <!-- lorem 50 -->
+              <h2>
+                รามเกียรติ์: ตำนานที่ไม่มีวันเลือน "รามเกียรติ์"
+                เป็นวรรณคดีที่เป็นสมบัติทางวัฒนธรรมและจิตวิญญาณของไทยที่สืบทอดมาอย่างยาวนาน
+                มีต้นกำเนิดจากมหากาพย์รามายณะของอินเดีย
+                แต่ถูกนำมาดัดแปลงให้สอดคล้องกับวิถีชีวิตและความเชื่อของคนไทย
+                จนกลายเป็นตำนานที่ได้รับความนิยมและมีอิทธิพลต่อศิลปะและวัฒนธรรมในหลายด้าน
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama2.webp" />
+          <div class="content">
+            <div class="author">RAMAKIEN</div>
+            <div class="title">วีรบุรุษและเหล่าวายร้าย</div>
+            <div class="topic">RAMAKIEN</div>
+            <div class="des">
+              <h2>
+                ธรรมะชนะอธรรม
+                เรื่องราวสะท้อนถึงการที่ความดีเอาชนะความชั่วได้เสมอ
+                บทบาทของความจงรักภักดี
+                ตัวละครเช่นหนุมานและพระลักษมณ์แสดงถึงความซื่อสัตย์และความภักดี
+                ความรักและความเสียสละ
+                พระรามและนางสีดาแสดงถึงความรักที่บริสุทธิ์และการเสียสละเพื่อกันและกัน
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama3.webp" />
+          <div class="content">
+            <div class="author">RAMAKIEN</div>
+            <div class="title">ตอนสำคัญในรามเกียรติ์</div>
+            <div class="topic">RAMAKIEN</div>
+            <div class="des">
+              <h2>
+                การเสียสละของพระรามและการเนรเทศ ,
+                ความจงรักภักดีและความซื่อสัตย์ของพระลักษมณ์,
+                ความกล้าหาญและความเสียสละของหนุมาน,
+                การลักพาตัวนางสีดาและการแสดงถึงอำนาจของอธรรม,
+                การพิสูจน์ความบริสุทธิ์ของนางสีดา,
+                ความสามัคคีและความร่วมมือของกองทัพวานร,
+                การต่อสู้ระหว่างความดีและความชั่ว,
+                การคืนสู่บ้านเกิดและการฟื้นฟูความสงบ
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama4.webp" />
+          <div class="content">
+            <div class="author">RAMAKIEN</div>
+            <div class="title">มรดกวัฒนธรรม</div>
+            <div class="topic">RAMAKIEN</div>
+            <div class="des">
+              <h2>
+                รามเกียรติ์ เป็นวรรณกรรมชั้นเยี่ยมที่มีต้นกำเนิดมาจาก รามายณะ
+                ของอินเดีย
+                แต่นำมาดัดแปลงและปรับแต่งให้เข้ากับวัฒนธรรมไทยจนกลายเป็นเอกลักษณ์เฉพาะตัว
+                สร้างขึ้นในสมัยอยุธยาและรุ่งเรืองในสมัยรัตนโกสินทร์ตอนต้น
+                รามเกียรติ์ไม่เพียงเป็นวรรณกรรมที่บันทึกไว้ในรูปแบบลายลักษณ์อักษร
+                แต่ยังแสดงออกในหลากหลายศิลปะ เช่น การแสดงโขน
+                การวาดจิตรกรรมฝาผนัง และงานประติมากรรม
+                ซึ่งล้วนสะท้อนถึงความงดงามและความลึกซึ้งของวัฒนธรรมไทย
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="image/yama1.webp" />
+          <div class="content">
+            <div class="title">ต้นกำเนิดและความสำคัญ</div>
+            <div class="description">RAMAKIEN</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama2.webp" />
+          <div class="content">
+            <div class="title">วีรบุรุษและเหล่าวายร้าย</div>
+            <div class="description">RAMAKIEN</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama3.webp" />
+          <div class="content">
+            <div class="title">ตอนสำคัญในรามเกียรติ์</div>
+            <div class="description">RAMAKIEN</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/yama4.webp" />
+          <div class="content">
+            <div class="title">มรดกวัฒนธรรม</div>
+            <div class="description">RAMAKIEN</div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
+
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>ลงชื่อสมัคร</header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>ชื่อ</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>ติดต่อ</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>วันเกิด</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>ชื่อผู้ใช้</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page">
+            <div class="title">ข้อมูลผู้สมัคร</div>
+            <div class="field">
+              <div class="label">ชื่อ</div>
+              <input type="text">
+            </div>
+            <div class="field">
+              <div class="label">นามสกุล</div>
+              <input type="text">
+            </div>
+            <div class="field">
+              <button class="firstNext next">ถัดไป</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">ข้อมูลติดต่อ:</div>
+            <div class="field">
+              <div class="label">อีเมล</div>
+              <input type="email">
+            </div>
+            <div class="field">
+              <div class="label">เบอร์โทร</div>
+              <input type="tel">
+            </div>
+            <div class="field btns">
+              <button class="prev-1 prev">ก่อน</button>
+              <button class="next-1 next">ถัดไป</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">ข้อมูลวันเกิด,เพศ:</div>
+            <div class="field">
+              <div class="label">วันเกิด</div>
+              <input type="date">
+            </div>
+            <div class="field">
+              <div class="label">เพศ</div>
+              <select>
+                <option>ชาย</option>
+                <option>หญิง</option>
+                <option>อื่นๆ</option>
+              </select>
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">ก่อน</button>
+              <button class="next-2 next">ถัดไป</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">ข้อมูลผู้ใช้:</div>
+            <div class="field">
+              <div class="label">ชื่อผู้ใช้</div>
+              <input type="text">
+            </div>
+            <div class="field">
+              <div class="label">สร้างรหัส</div>
+              <input type="password" class="password">
+            </div>
+            <div class="field">
+              <div class="label">ยืนยันรหัส</div>
+              <input type="password" class="password">
+              <i class='bx bx-hide eye-icon'></i>
+            </div>
+            <div class="field btns">
+              <button class="prev-3 prev">ก่อน</button>
+              <button class="submit">ยืนยัน</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="eye.js"></script>
+
+  </body>
+</html>
